@@ -9,12 +9,12 @@ app = flask.Flask(__name__)
 
 
 @app.route('/')
-def index():
+def firstPage():
     return render_template('index.html')
 
 
 @app.route('/result')
-def main():
+def resultPage():
     omikuji = [gorilla.no1, gorilla.no2, gorilla.no3, gorilla.no4, gorilla.no5, gorilla.no6,
                gorilla.no7, gorilla.no8, gorilla.no9, gorilla.no10, gorilla.no11, gorilla.no12,
                gorilla.no13, gorilla.no14, gorilla.no15, gorilla.no16, gorilla.no17, gorilla.no18,
