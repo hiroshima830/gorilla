@@ -1,2 +1,2 @@
 web: python index.py
-main: gunicorn main:app --log-file=-
+main: gunicorn main:app ---log-file -
